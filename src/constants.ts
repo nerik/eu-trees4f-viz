@@ -15,8 +15,8 @@ export const MAX_ZOOM = 8
 export const TIME_STEPS: TimeStep[] = ['2005', '2035', '2065', '2095']
 
 export const COLOR_BY_CELL_TYPE: Record<CellType, number[]> = {
-  stable: [0, 150, 0],
-  decolonized: [255, 0, 0],
-  suitable: [0, 255, 0],
-  unknown: [0, 0, 0, 0],
+  stable: [0, 150, 0, 128],
+  decolonized: [255, 0, 0, 128],
+  suitable: [0, 255, 0, 128],
+  unknown: [0, 0, 0, 0, 128],
 }

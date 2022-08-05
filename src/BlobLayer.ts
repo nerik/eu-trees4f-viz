@@ -5,19 +5,19 @@ const defaultProps = {
 }
 
 export default class BlobLayer extends IconLayer {
-  getShaders() {
-    const shaders = super.getShaders()
-    shaders.inject = {
-      'fs:#main-end': `\
-        if(texColor.a > 0.99) {
-          gl_FragColor.a = 1.0;
-        } else {
-          discard;
-        }
-    `,
-    }
-    return shaders
-  }
+  //   getShaders() {
+  //     const shaders = super.getShaders()
+  //     shaders.inject = {
+  //       'fs:#main-end': `\
+  //         if(texColor.a > 0.99) {
+  //           gl_FragColor.a = 1.0;
+  //         } else {
+  //           discard;
+  //         }
+  //     `,
+  //     }
+  //     return shaders
+  //   }
   //   draw(params) {
   //     const {animationCurrentFrame, animationNumCols, animationNumRows} = this.props;
   //     const animationCol = animationCurrentFrame % animationNumCols;
